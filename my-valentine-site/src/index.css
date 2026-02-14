@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700;800&display=swap');
+@import "tailwindcss";
+
+/* Phase 1: Defining our Romantic Color Palette */
+:root {
+  --color-val-cream: #FFF7CD;
+  --color-val-peach: #FDC3A1;
+  --color-val-coral: #FB9B8F;
+  --color-val-pink: #F57799;
+
+  --font-lora: 'Lora', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+/* Headings use Montserrat */
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+}
+
+/* Utility font classes for explicit usage */
+.font-lora { font-family: var(--font-lora); }
+.font-montserrat { font-family: var(--font-montserrat); }
+
+/* Optional: Smooth scrolling for the letter phase */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-val-cream);
+  margin: 0;
+  font-family: var(--font-lora);
+}
+
+/* Floating hearts animation */
+.heart svg {
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.heart {
+  width: 2rem;
+  height: 2rem;
+  transform-origin: center;
+  /* two animations: fly-to-top (1s forwards) then bob (infinite) */
+  animation: fly-to-top 2000ms forwards, bob 2000ms infinite 2000ms;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.08));
+}
+
+@keyframes fly-to-top {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    /* move to near top of the viewport */
+    opacity: 1;
+    transform: translateY(calc(-1 * var(--start-to-top, 80vh))) scale(0.9);
+    top: 8px;
+  }
+}
+
+@keyframes bob {
+  0% { transform: translateY(0) translateX(0) scale(0.98); }
+  50% { transform: translateY(-6px) translateX(3px) scale(1); }
+  100% { transform: translateY(0) translateX(0) scale(0.98); }
+}

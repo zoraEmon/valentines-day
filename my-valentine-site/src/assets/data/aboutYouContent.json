@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "icon": "☕",
+    "title": "Kopiko Brown",
+    "fact": "kung gaano mo ka-lik yung tapang at tamis ng Kopiko Brown.",
+    "image": "/likes/kopiko.jpg"
+  },
+  {
+    "id": 2,
+    "icon": "🎮",
+    "title": "Valorant",
+    "fact": "Madalas kang inaabot ng gabi sa paglalaro ng Valorant",
+    "image": "/likes/valorant.jpg"
+  },
+  {
+    "id": 3,
+    "icon": "🍜",
+    "title": "Tinola",
+    "fact": "Na ang paborito mong ulam ay ang tinola, kahit na bihira kayo kumain ng sabaw.",
+    "image": "/likes/tinola.jpg"
+  },
+  {
+    "id": 4,
+    "icon": "🍓",
+    "title": "Strawberry",
+    "fact": "Strawberry ang gusto mong prutas at flavor.",
+    "image": "/likes/strawberry.jpg"
+  },
+  {
+    "id": 5,
+    "icon": "🍧",
+    "title": "Ice Cream",
+    "fact": "Na madalas kang nakain ng ice cream pag pauwi na kayo galing school.",
+    "image": "/likes/ice-cream.jpg"
+  },
+  {
+    "id": 6,
+    "icon": "🌼",
+    "title": "White Flowers",
+    "fact": "Gaya ng isang puting bulaklak na gusto mo, isa kang dalisay, maganda at mabuting tao.",
+    "image": "/likes/flower.jpg"
+  }
+]

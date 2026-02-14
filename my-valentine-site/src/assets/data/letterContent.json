@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "heading": "Our First Chapter",
+    "text": "Do you remember this day, nung nakilala kita sa LM, tas nagpakilala ako sayo bilang kaibigan kahit iba naman talaga ang intention ko? I was so nervous but you were so kind and welcoming. I knew right then that you were someone special. Nanood tayo ng movie, doon palang nagustuhan na kita.",
+    "images": ["/love/lab1.png"]
+  },
+  {
+    "id": 2,
+    "heading": "The Little Things",
+    "text": "I love yung mga maliliit na bagay na ginagawa mo, like yung mga sweet messages mo tuwing umaga, yung sabay natin na pagtulog tuwing gabi na inaabot na tayo ng umaga tas mag good morning tayo sa isa't isa. You have become my daily routine, love love.",
+    "images": ["/love/lab2.jpg", "/love/lab3.jpg"]
+  },
+  {
+    "id": 3,
+    "heading": "Looking Forward",
+    "text": "And even though na nagkakaroon tayo ng away at di pag kakaintindihan, we don't let it break us. We always find our way back to each other, and that's what makes us strong, that what makes us na umintindi pa sa isa't isa.",
+    "images": ["/love/lab4.png", "/love/lab5.jpg"]
+  }
+]
