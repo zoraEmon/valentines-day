@@ -1,6 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, Suspense } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import Lottie, { type LottieRefCurrentProps } from 'lottie-react';
+import type { LottieRefCurrentProps } from 'lottie-react';
+const Lottie = React.lazy(() => import('lottie-react').then(mod => ({ default: mod.default })));
 import envelopeAnimation from '../assets/graphics/love-letter/animations/12345.json';
 
 // Import our new chunks
@@ -50,13 +51,15 @@ export default function Envelope({ onOpenComplete }: EnvelopeProps) {
         onClick={handleTap}
         className="cursor-pointer relative w-80 h-80"
       >
-        <Lottie 
-          lottieRef={lottieRef}
-          animationData={envelopeAnimation}
-          autoplay={false} 
-          loop={false}     
-          className="w-full h-full pointer-events-none transform origin-center scale-[3]" 
-        />
+        <Suspense fallback={<div className="w-full h-full" /> }>
+          <Lottie 
+            lottieRef={lottieRef}
+            animationData={envelopeAnimation}
+            autoplay={false} 
+            loop={false}     
+            className="w-full h-full pointer-events-none transform origin-center scale-[3]" 
+          />
+        </Suspense>
         
         <EnvelopeBadge tapCount={tapCount} />
       </motion.div>

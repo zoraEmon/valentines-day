@@ -23,7 +23,7 @@ export default function App() {
       className={`min-h-screen overflow-x-hidden font-lora flex flex-col bg-cover bg-center bg-fixed transition-all duration-1000 ${
         stage === 'envelope' 
           ? 'bg-[var(--color-val-peach)]' 
-          : 'bg-[url("src/assets/graphics/valentine-ui.jpg")]' // Ensure this matches your file name exactly!
+          : 'bg-[url("/valentine-ui.jpg")]' // Ensure this matches your file name exactly!
       }`}
     >
       <FloatingHearts />

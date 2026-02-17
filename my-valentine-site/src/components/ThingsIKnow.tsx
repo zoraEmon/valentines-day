@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 
 import factsData from '../assets/data/aboutYouContent.json';
-import cuteBear from '../assets/graphics/cute-bear.jpg';
+import cuteBear from '../assets/graphics/cute-bear.webp';
 
 interface Fact {
   id: number;
