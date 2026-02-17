@@ -6,6 +6,7 @@ import Envelope from './components/Envelope';
 import FloatingHearts from './components/FloatingHearts';
 import Letter from './components/Letter';
 import ThingsIKnow from './components/ThingsIKnow'; 
+import Bouquet from './components/Bouquet'; // <-- 1. Import the grand finale!
 
 type AppStage = 'envelope' | 'letter';
 
@@ -18,7 +19,6 @@ export default function App() {
 
   return (
     <main 
-      // FIX: We use a dynamic className to change the background based on the stage!
       // bg-cover ensures the image fills the screen. bg-fixed ensures it doesn't move when scrolling.
       className={`min-h-screen overflow-x-hidden font-lora flex flex-col bg-cover bg-center bg-fixed transition-all duration-1000 ${
         stage === 'envelope' 
@@ -49,10 +49,14 @@ export default function App() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="w-full"
+            className="w-full relative z-10" // Added relative z-10 to ensure content sits cleanly above the background
           >
             <Letter />
             <ThingsIKnow />
+            
+            {/* 2. Place the Bouquet at the very end of the journey! */}
+            <Bouquet />
+            
           </motion.div>
         )}
 

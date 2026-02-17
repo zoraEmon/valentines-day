@@ -1,4 +1,4 @@
-import React from 'react';import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import letterData from '../assets/data/letterContent.json';
 
 interface LetterSection {
@@ -49,10 +49,7 @@ export default function Letter() {
             ))}
           </motion.div>
 
-          {/* ==========================================
-              RIGHT SIDE: THE READABLE TEXT
-              flex-1 tells the text to take up ALL remaining horizontal space
-          ========================================== */}
+          {/* Text side! The flex-1 ensures it takes up all the remaining space and doesn't get squished by the images. */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
